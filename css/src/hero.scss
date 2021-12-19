@@ -1,0 +1,203 @@
+.hero {
+    position: relative;
+    margin-top: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 200px 0;
+    background-image: url("../images/hero-image.jpg");
+    background-size: cover;
+    background-position: center center;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #1C1C1C;
+        opacity: 0.63;
+    }
+
+    .container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .description-box {
+        color: white;
+
+        img {
+            width: 247px;
+            height: 108px;
+        }
+
+        .title {
+            font-size: 36px;
+            width: 426px;
+            line-height: 93%;
+            padding-top: 21px;
+            padding-bottom: 21px;
+
+            &:after {
+                content: "";
+                width: 84px;
+                border: 1px solid white;
+                display: inline-block;
+            }
+        }
+
+        .content {
+            width: 650px;
+            padding-bottom: 43px;
+        }
+
+        button {
+            padding: 12px 22px;
+            border: 1px solid white;
+            color: white;
+            background: none;
+
+        }
+    }
+
+    .form-box {
+        max-width: 500px;
+        width: 360px;
+        background-color: #fff;
+        border-radius: 5px;
+        font-weight: bold;
+        
+        
+        
+        .form-bottom {
+               
+            button {
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #41D395;
+            color: white;
+            border-radius: 0px 0px 5px 5px;
+            height: 57px;
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            padding: 0px;
+            
+            
+            }
+          }
+
+        .form-top {
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background:#F5F5F5;
+            border-radius: 5px 5px 0px 0px;
+            height: 57px;
+
+            span {
+                color: #E27866;
+                white-space:pre;
+            }
+          }
+
+         form {
+            padding: 30px 50px;
+
+            input {
+                width: 260px;
+                border: none;
+                border-bottom: 1px solid #D8D8D8;
+                font-family: "Montserrat",sans-serif;
+                
+            }
+
+           
+    
+            .form-row {
+                display: flex;
+                
+                
+            }
+    
+            .radio-input-wrap {
+                
+                input {
+                    display: none;
+                                                  
+                    
+                }
+    
+                input:checked ~ label:before {
+                    background: red;
+                    
+                }
+    
+                label {
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    position: relative;
+    
+                    &:before {
+                        content: '';
+                        display: inline-block;
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        border: 1px solid #41D395;
+                        transition: 0.3s ease-in-out;
+                        position: relative;
+                        margin-right: 5px;
+                        margin-left: 5px;
+                        margin-bottom: -2px;
+                        
+                        
+                        
+                        
+                        
+                    }
+                }
+            }
+        }
+        
+        
+    }
+
+}
+
+.media-box {
+    padding: 20px 150px 20px 150px;
+    height: 30px;
+    background-color: white;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    
+
+    .description-box {
+        width: 395px;
+    }
+
+    .icon-box {
+        display: flex;
+        justify-content: space-evenly;
+        width: 60%;
+
+        a {
+            color: #E27866;
+            transform: scale(2.5);
+            
+        }
+    }
+   
+}
+
+
+
+
