@@ -24,6 +24,7 @@
         position: relative;
         display: flex;
         justify-content: space-between;
+        align-items:flex-end;
     }
 
     .description-box {
@@ -173,7 +174,7 @@
 
 .media-box {
     padding: 20px 150px 20px 150px;
-    height: 30px;
+    
     background-color: white;
     font-size: 14px;
     display: flex;
@@ -188,6 +189,7 @@
         display: flex;
         justify-content: space-evenly;
         width: 60%;
+        margin-top: 25px;
 
         a {
             color: #E27866;
