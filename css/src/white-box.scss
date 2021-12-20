@@ -1,0 +1,95 @@
+.white-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 0;
+    background-color: #FFFFFF;
+    
+
+    .title-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    
+
+        .title {
+            font-size: 36px;
+            font-weight: bolder;
+            padding-bottom: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+
+            &:after {
+                content: "";
+                width: 84px;
+                border: none;
+                border-bottom: 2px solid #E27866;
+                display: block;
+                padding-top: 22px;
+                width: 64px;
+               
+            }
+
+            
+        }
+        p {
+            font-size: 14px;
+            padding-bottom: 65px;
+        }
+    }
+
+
+
+    .container {
+        
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        .small-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;  
+            padding: 0px 35px 0px 35px;
+            border: 2px solid red;
+
+            .icon {
+                border: 1px solid #E27866;
+                border-radius: 50%;
+                height: 50px;
+                width: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            i {
+                color:#E27866;
+                transform: scale(1.5);
+                // position: absolute;
+                
+            }
+           }
+
+            p {
+                font-size: 14px;
+                text-align: center;
+            }
+
+            p:first-of-type {
+                 font-size: 18px;
+                 padding-top: 22px;
+                 padding-bottom: 22px;
+              
+            }
+           }
+    }
+}    

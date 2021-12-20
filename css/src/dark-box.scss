@@ -1,0 +1,94 @@
+.black-box {
+    
+    display: flex;
+    align-items: center;
+    padding: 200px 0;
+    background-color: #1C1C1C;
+    
+
+    .container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // align-items:flex-end;
+
+
+        .logo-box {
+            img {
+                width: 390px;
+                height: 170px;
+            }
+
+        }
+
+        .description-box {
+            color: white;
+            
+    
+            
+    
+            .title {
+                font-size: 30px;
+                width: 315px;
+                line-height: 93%;
+                padding-bottom: 21px;
+    
+                &:after {
+                    content: "";
+                    width: 200px;
+                    border: none;
+                    border-bottom: 2px solid #E27866;
+                    display: inline-block;
+                }
+            }
+    
+            .content {
+                width: 450px;
+                font-size: 14px;
+
+                p {
+                    margin-bottom: 40px;
+                    margin-left: 70px;
+                    // position: relative;
+
+
+
+                    &:not(:first-child):before {
+                        content: '';
+                        display: inline-block;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        border: 1px solid #E27866;
+                        position: absolute;
+                        margin-left: -70px;
+                        background-image: url('https://api.iconify.design/entypo/eye.svg?color=white');
+                        background-repeat: no-repeat;
+                        background-size: 35px 35px;
+                        background-position: center;
+                        background-color: #E27866;
+                                               
+                    }
+
+                    &:nth-child(3):before {
+                        content: '';
+                        background-image: url('https://api.iconify.design/cil/comment-bubble.svg?color=white');
+                    }
+
+
+
+
+
+                    span {
+                        font-weight: bolder;
+                    }
+                }
+                
+                
+            }
+    
+            
+        }
+    }
+}
