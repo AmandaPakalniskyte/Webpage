@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/e07dd4d69d.js" crossorigin="anonymous"></script>
     <title>Document</title>
@@ -81,7 +82,7 @@
                     <a href="https://www.google.com/"><i class="fas fa-wifi"></i></i></i></a>
                 </div>
         </section>
-        <section class="tab-grid">
+        <!-- <section class="tab-grid">
             <div class="container">
                 <div class="tab-box">
                     <div><span>REGISTER</span></div>
@@ -108,12 +109,40 @@
 
                             
             </div>
+        </section> -->
+
+        <section class="about" id="about">
+            <div class="container">
+                <nav class="tab-navigation">
+                    <ul>
+                        <li data-target="register" class="active">
+                            <span>Register</span>
+                        </li>
+                        <li data-target="apply">
+                            <span>Apply</span>
+                        </li>
+                        <li data-target="receive">
+                            <span>Receive</span>
+                        </li>
+                    </ul>
+                </nav>
+                <div data-tab="register" class="tab-content active">
+                    <div class="title">Tabs with soft transitioning effect. Explained propritety of out perpetual his you.</div>
+                <div class="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed quia minima nobis voluptatem saepe officiis error harum nihil recusandae iste dolor sit quas, dolores maxime laudantium praesentium amet sunt eum?
+                    
+                    <br><br>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste libero obcaecati quos.
+                </div>
+            </div>
+                <div data-tab="apply" class="tab-content">Apply content</div>
+                <div data-tab="receive" class="tab-content">Receive content</div>
+            </div>
         </section>
 
 
 
 
-        <section class="black-box">
+        <section class="dark-box">
             <div class="container">
                 <div class="logo-box">
                     <img src="images/logo.svg" alt="Logo">
@@ -162,5 +191,7 @@
         </section>
     </main>
     <footer></footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
