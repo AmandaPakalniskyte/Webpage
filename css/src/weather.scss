@@ -1,0 +1,164 @@
+.weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: $myPadding;
+    background-color: $myColorFour;
+
+    .title-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        color: #fff;
+
+    
+
+        .title {
+            font-size: 36px;
+            font-weight: bolder;
+            padding-bottom: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            
+        }
+        .title-small {
+            font-size: 14px;
+            padding-bottom: 65px;
+        }
+    }
+    
+    .temperature-box {
+        display: flex;
+        
+
+        width: 390px;
+        color: #fff;
+        
+        i{
+            padding-right: 5px;
+        }
+        
+        
+
+        
+
+
+        .temperature {
+            display: flex;
+            align-items: center;
+            padding-right: 8px;
+            padding-bottom: 7px;
+            font-size: 18px;
+            font-weight: bolder;
+
+            p {
+                padding-left: 20px;
+                // padding-bottom: ;
+                font-size: 12px;
+                font-weight: normal;
+            }
+        }
+    }
+
+    
+
+    .form-box {
+        max-width: 500px;
+        width: 390px;
+        background-color: #fff;
+        border-radius: 5px;
+        font-weight: bold;
+        
+        
+        
+        .form-bottom {
+               
+            button {
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $myColorTwo;
+            color: white;
+            border-radius: 5px;
+            height: 48px;
+            width: 160px;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+            margin: 32px 116px;
+            
+            
+            }
+          }
+
+        
+
+         form {
+            padding: 30px 65px 0px 65px;
+
+            input {
+                width: 260px;
+                border: none;
+                border-bottom: 1px solid #D8D8D8;
+                font-family: "Montserrat",sans-serif;
+                
+            }
+
+           
+    
+            .form-row {
+                display: flex;
+                
+                
+            }
+    
+            .radio-input-wrap {
+                
+                input {
+                    display: none;
+                                                  
+                    
+                }
+    
+                input:checked ~ label:before {
+                    background: $myColorTwo;
+                    
+                }
+    
+                label {
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    position: relative;
+    
+                    &:before {
+                        content: '';
+                        display: inline-block;
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        border: 1px solid $myColorTwo;
+                        transition: 0.3s ease-in-out;
+                        position: relative;
+                        margin-right: 5px;
+                        margin-left: 5px;
+                        margin-bottom: -2px;
+                        
+                        
+                        
+                        
+                        
+                    }
+                }
+            }
+        }
+        
+        
+    }
+}

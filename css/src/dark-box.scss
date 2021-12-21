@@ -2,8 +2,8 @@
     
     display: flex;
     align-items: center;
-    padding: 200px 0;
-    background-color: #1C1C1C;
+    padding: $myPadding;
+    background-color: $myColorTree;
     
 
     .container {
@@ -38,7 +38,7 @@
                     content: "";
                     width: 200px;
                     border: none;
-                    border-bottom: 2px solid #E27866;
+                    border-bottom: 2px solid $myColorFour;
                     display: inline-block;
                 }
             }
@@ -60,7 +60,7 @@
                         width: 50px;
                         height: 50px;
                         border-radius: 50%;
-                        border: 1px solid #E27866;
+                        border: 1px solid $myColorFour;
                         position: absolute;
                         margin-left: -70px;
                         background-image: url('https://api.iconify.design/entypo/eye.svg?color=white');

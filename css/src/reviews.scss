@@ -1,0 +1,126 @@
+.reviews {
+    padding: $myPadding;
+
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+        display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        &:after {
+            content: "";
+            border: none;
+            border-bottom: 2px solid $myColorTwo;
+            display: block;       
+            padding-top: 22px;
+            margin-bottom: 55px;
+            width: 64px;
+           
+        }
+    }
+
+    .reviews-swiper {
+        height: 300px;
+        .single-review {
+            user-select: none;
+            
+            .text {
+                background-color: $myColorFive;
+                border-radius: 8px;
+                padding: 20px;
+
+                p {
+                    font-size: 16px;
+                    line-height: 1.375;
+                    color: #fff;
+                }
+            }
+
+            // &:after {
+            //     content: "";
+            //     position: absolute;
+            //     border: 10px solid red;
+            //     right:85%;
+            //     top: 50%;
+            //     transform: translateY(50%);
+            //     border-bottom-color: transparent;
+            //     border-left-color: transparent;
+            //     border-right-color: transparent;
+
+            // }
+
+            .photo-box {
+                display: flex;
+                margin-top: 20px;
+                position: relative;
+
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    border: 10px solid #6696E2;
+                    right:85%;
+                    top: -43%;
+                    transform: translateY(50%);
+                    border-bottom-color: transparent;
+                    border-left-color: transparent;
+                    border-right-color: transparent;
+    
+                }
+
+                
+                
+                .photo {
+                    height:70px;
+                    width: 70px;
+                    background-image: url("../images/avatar.jpg");
+                    background-size: cover;
+                    margin-right: 17px;
+                }
+
+                .name {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    color: #86878B;
+
+                    span {
+                        font-size: 20px;
+                        color: black;
+                    }
+                }
+
+            }
+
+            
+        }
+
+        .swiper-pagination {
+            position: static;
+            margin-top: 85px;
+            line-height: 0;
+
+            .swiper-pagination-bullet {
+                margin: 0;
+                width: 10px;
+                height: 10px;
+                border: 1px solid $myColorFour;
+                background-color: transparent;
+                opacity: 1;
+
+                &:not(:last-child) {
+                    margin-right: 20px;
+                }
+
+                &-active {
+                    background-color: $myColorFour;
+                }
+            }
+        }
+    }
+
+
+}

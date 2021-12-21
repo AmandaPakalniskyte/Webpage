@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -14,4 +18,12 @@ body {
     padding: 0 20px;
     box-sizing: border-box;
 }
+
+$myColorOne: white;
+$myColorTwo: #41D395;
+$myColorTree: #1C1C1C;
+$myColorFour: #E27866;
+$myColorFive: #6696E2;
+
+$myPadding: 115px 0;
 

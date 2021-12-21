@@ -1,3 +1,36 @@
 footer {
-    background: pink;
+    padding: 40px 150px 40px 150px;
+    
+    background-color: $myColorTree;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    
+
+    .description-box {
+        width: 395px;
+        color: #707070;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .icon-box {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        
+
+        a {
+            color: $myColorFour;
+            transform: scale(2);
+            
+        }
+    }
+   
 }
+
+
+
+

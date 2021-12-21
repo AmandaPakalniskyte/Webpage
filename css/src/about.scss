@@ -1,7 +1,7 @@
 .about {
     position: relative;
-    padding: 115px 0;
-    background-color: pink;
+    padding: $myPadding;
+    // background-color: pink;
     background-image: url("../images/tab-image.jpg");
     background-size: cover;
     background-position: center center;
@@ -13,7 +13,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(270deg, #6696E2 0%, #E27866 100%);
+        background: linear-gradient(270deg, #6696E2 0%, $myColorFour 100%);
         opacity: 0.42;
     }
 
@@ -45,14 +45,14 @@
                 }
 
                 &.active {
-                    background-color: #E27866;
+                    background-color: $myColorFour;
                 }
 
                 span {
                     position: absolute;
                     transform: rotate(-45deg);
                     font-size: 14px;
-                    color: #fff;
+                    color: $myColorOne;
                     text-transform: uppercase;
                     font-weight: bolder;
                  }
@@ -63,7 +63,11 @@
     .tab-content {
         display: none;
         animation: tab-reveal 0.5s forwards;
-        color: #fff;
+        color: $myColorOne;
+        width: 100%;
+        
+
+        
 
         .title {
             font-size: 36px;
@@ -82,7 +86,60 @@
         
 
         &.active {
-            display: block;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+
+        .image-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 365px;
+            height: 365px;
+            // border: 2px solid blue;
+
+            .small-images {
+                display: flex;
+                justify-content: space-between;
+                height: 168px;
+                width: 100%;
+                // border: 2px solid red;
+
+                div {
+                    height: 100%;
+                    width: 168px;
+                    // border: 2px solid green;
+                    // background-image: url("../images/greens.jpg");
+                    // background-size: cover;
+                    
+                    
+
+                    img {
+                        
+                        height: 168px;
+                        width: 168px;
+                        object-fit: cover;
+                        
+                    }
+                    
+                    
+                }
+            }
+
+            .big-image {
+                height: 170px;
+                width: 100%;
+                // border: 2px solid yellow;
+
+                img {
+                    height: 178px;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
         }
     }
 }

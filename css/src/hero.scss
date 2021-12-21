@@ -1,10 +1,11 @@
+
 .hero {
     position: relative;
     margin-top: 72px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 200px 0;
+    padding: $myPadding;
     background-image: url("../images/hero-image.jpg");
     background-size: cover;
     background-position: center center;
@@ -16,7 +17,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: #1C1C1C;
+        background-color: $myColorTree;
         opacity: 0.63;
     }
 
@@ -27,7 +28,7 @@
         align-items:flex-end;
 
         .description-box {
-            color: white;
+            color: $myColorOne;
     
             img {
                 width: 247px;
@@ -45,7 +46,7 @@
                     content: "";
                     width: 84px;
                     border: none;
-                    border-bottom: 1px solid white;
+                    border: 1px solid $myColorOne;
                     display: inline-block;
                 }
             }
@@ -57,9 +58,10 @@
     
             button {
                 padding: 12px 22px;
-                border: 1px solid white;
-                color: white;
+                border: 1px solid $myColorOne;
+                color: $myColorOne;
                 background: none;
+                cursor: pointer;
     
             }
         }
@@ -67,7 +69,7 @@
         .form-box {
             max-width: 500px;
             width: 360px;
-            background-color: #fff;
+            background-color: $myColorOne;
             border-radius: 5px;
             font-weight: bold;
             
@@ -80,8 +82,8 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background: #41D395;
-                color: white;
+                background: $myColorTwo;
+                color: $myColorOne;
                 border-radius: 0px 0px 5px 5px;
                 height: 57px;
                 width: 100%;
@@ -98,12 +100,12 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background:#F5F5F5;
+                background: #F5F5F5;
                 border-radius: 5px 5px 0px 0px;
                 height: 57px;
     
                 span {
-                    color: #E27866;
+                    color: $myColorFour;
                     white-space:pre;
                 }
               }
@@ -136,7 +138,7 @@
                     }
         
                     input:checked ~ label:before {
-                        background: red;
+                        background: $myColorTwo;
                         
                     }
         
@@ -151,7 +153,7 @@
                             width: 15px;
                             height: 15px;
                             border-radius: 50%;
-                            border: 1px solid #41D395;
+                            border: 1px solid $myColorTwo;
                             transition: 0.3s ease-in-out;
                             position: relative;
                             margin-right: 5px;
@@ -178,7 +180,7 @@
 .media-box {
     padding: 20px 150px 20px 150px;
     
-    background-color: white;
+    background-color: $myColorOne;
     font-size: 14px;
     display: flex;
     justify-content: space-between;
@@ -190,12 +192,13 @@
 
     .icon-box {
         display: flex;
-        justify-content: space-evenly;
-        width: 60%;
+        justify-content: space-between;
+        width: 50%;
         margin-top: 25px;
+        
 
         a {
-            color: #E27866;
+            color: $myColorFour;
             transform: scale(2.5);
             
         }

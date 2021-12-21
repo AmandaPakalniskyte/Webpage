@@ -44,7 +44,8 @@ const swiper = new Swiper('.reviews-swiper', {
     breakpoints: {
         800: {
           slidesPerView: 3,
-          spaceBetween: 120
+          spaceBetween: 120,
+          slidesPerGroup: 3,
         }
       }
 });
@@ -53,7 +54,7 @@ const swiper = new Swiper('.reviews-swiper', {
 // Get weather data from openweather API
 //
 
-const url = "https://api.openweathermap.org/data/2.5/weather?q=London&units=metric&appid=5ccac2d1b356d2a66489fe488e39791b";
+const url = "https://api.openweathermap.org/data/2.5/weather?q=Madrid&units=metric&appid=d35c6784200117279d40254aa658d136";
 const weatherElement = document.getElementById("weather-in-celsius");
 
 function getCurrentWeatherInCelsius() {
@@ -64,7 +65,7 @@ function getCurrentWeatherInCelsius() {
         const temperature = response.main.temp;
 
         if (temperature > 0) {
-            weatherElement.innerText = "+" + temperature;
+            weatherElement.innerText = "+" + Math.round(temperature);
         } else {
             weatherElement.innerText = temperature;
         }

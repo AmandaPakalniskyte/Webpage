@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 200px 0;
+    padding: $myPadding;
     background-color: #FFFFFF;
     
 
@@ -28,9 +28,9 @@
 
             &:after {
                 content: "";
-                width: 84px;
+                
                 border: none;
-                border-bottom: 2px solid #E27866;
+                border-bottom: 2px solid $myColorFour;
                 display: block;
                 padding-top: 22px;
                 width: 64px;
@@ -63,7 +63,7 @@
             border: 2px solid red;
 
             .icon {
-                border: 1px solid #E27866;
+                border: 1px solid $myColorFour;
                 border-radius: 50%;
                 height: 50px;
                 width: 50px;
@@ -72,7 +72,7 @@
                 align-items: center;
 
             i {
-                color:#E27866;
+                color: $myColorFour;
                 transform: scale(1.5);
                 // position: absolute;
                 
