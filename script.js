@@ -71,6 +71,8 @@ document.querySelectorAll(".small-one").addEventListener('click', myFunction);
 
 
 
+
+
 //
 // Reviews section swiper gallery
 //
@@ -126,23 +128,35 @@ window.addEventListener('load', getCurrentWeatherInCelsius)
 
 // Bottom form
 
-let secondbtn = document.getElementById('sendbtn');
+let firstNameTwo = document.getElementById('fname'),
+    surnameTwo = document.getElementById('lname'),
+    phoneTwo = document.getElementById('pnumber'),
+    secondbtn = document.getElementById('sendbtn');
+
     secondbtn.addEventListener('click', function() {
-        if (firstName.value && surname.value && phone.value) {
-            firstName.nextElementSibling.classList.add('hidden');
-            surname.nextElementSibling.classList.add('hidden');
-            phone.nextElementSibling.classList.add('hidden');
+        if (firstNameTwo.value && surnameTwo.value && phoneTwo.value) {
+            firstNameTwo.nextElementSibling.classList.add('hidden');
+            surnameTwo.nextElementSibling.classList.add('hidden');
+            phoneTwo.nextElementSibling.classList.add('hidden');
             
         }
 
-        if (!firstName.value) {
-            firstName.nextElementSibling.classList.remove('hidden');
+        if (!firstNameTwo.value) {
+            firstNameTwo.nextElementSibling.classList.remove('hidden');
         }
         
-        if (!surname.value) {
-            surname.nextElementSibling.classList.remove('hidden');
+        if (!surnameTwo.value) {
+            surnameTwo.nextElementSibling.classList.remove('hidden');
         }
-        if (!phone.value) {
-            phone.nextElementSibling.classList.remove('hidden');
+        if (!phoneTwo.value) {
+            phoneTwo.nextElementSibling.classList.remove('hidden');
         }
     });
+
+
+//     let change = document.querySelectorAll(".image-box");
+// for (let i = 0; i < change.length; 1++) {
+//     change[i].addEventListener("click", function() {
+//         this.classList.add("active");
+//     });
+// };
