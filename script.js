@@ -60,11 +60,11 @@ for (let tabElement of tabNavigationElements) {
 
 // About section. Change of picture background
 
-document.querySelectorAll(".small-one").addEventListener('click', myFunction);
-    function myFunction() {
-    var element = document.querySelectorAll(".small-one");
-    element.classList.add("active");
-  };
+// document.querySelectorAll(".small-one").addEventListener('click', myFunction);
+//     function myFunction() {
+//     var element = document.querySelectorAll(".small-one");
+//     element.classList.add("active");
+//   };
 
 
 
@@ -80,8 +80,8 @@ document.querySelectorAll(".small-one").addEventListener('click', myFunction);
 const swiper = new Swiper('.reviews-swiper', {
     speed: 900,
     slidesPerView: 1,
-    spaceBetween: 50,
-    // slidesPerGroup: 3,
+    spaceBetween: 60,
+    // slidesPerGroup: 2,
     autoHeight: true,
     loop: true,
     autoplay: {
@@ -91,13 +91,22 @@ const swiper = new Swiper('.reviews-swiper', {
         el: '.swiper-pagination',
         clickable: true
     },
+
+    
+
     breakpoints: {
-        800: {
+        1100: {
           slidesPerView: 3,
           spaceBetween: 120,
           slidesPerGroup: 3,
-        }
-      }
+        },
+        550: {
+            slidesPerView: 2,
+            spaceBetween: 80,
+            slidesPerGroup: 2,
+          }
+    }
+      
 });
 
 //

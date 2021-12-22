@@ -6,6 +6,9 @@
     padding: $myPadding;
     background-color: #FFFFFF;
     
+    @media (max-width: 1100px) {
+        padding: $mySecondPadding;  
+    }
 
     .title-box {
         display: flex;
@@ -13,6 +16,8 @@
         justify-content: center;
         align-items: center;
         width: 100%;
+        text-align: center;
+        
 
     
 
@@ -22,8 +27,10 @@
             padding-bottom: 25px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
+            
+            
+            
             
 
             &:after {
@@ -53,14 +60,20 @@
         justify-content: center;
         align-items: flex-start;
 
+        @media (max-width: 1100px) {
+            flex-wrap: wrap;
+              
+        }
+
         .small-box {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 100%;  
+            width: 320px;  
             padding: 0px 35px 0px 35px;
-            border: 2px solid red;
+            
+            margin-top: 20px;
 
             .icon {
                 border: 1px solid $myColorFour;

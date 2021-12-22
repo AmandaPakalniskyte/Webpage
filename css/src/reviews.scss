@@ -1,6 +1,10 @@
 .reviews {
     padding: $myPadding;
 
+    @media (max-width: 1100px) {
+        padding: $mySecondPadding;   
+    }
+
     h2 {
         text-align: center;
         text-transform: uppercase;

@@ -39,3 +39,9 @@ header {
         }
     }
 }
+
+@media (max-width: 1100px) {
+    header {
+    background-color: purple;
+    }
+}

@@ -5,6 +5,10 @@
     align-items: center;
     padding: $myPadding;
     background-color: $myColorFive;
+
+    @media (max-width: 1100px) {
+        padding: $mySecondPadding;  
+    }
     
 
     .title-box {
@@ -12,6 +16,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
         width: 100%;
         color: #fff;
 
@@ -43,14 +48,23 @@
         p {
             font-size: 14px;
             padding-bottom: 65px;
+            
         }
     }
     .container {
         
         display: flex;
-        justify-content:space-between;
+        justify-content:space-around;
         align-items: flex-end;
         width: 100%;
+
+        @media (max-width: 1100px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+              
+        }
 
         .box {
             width: 345px;
@@ -62,6 +76,7 @@
             background-color: #fff;
             border-radius: 5px;
             line-height: 230%;
+            margin-bottom: 40px;
 
             .price.popular {
                 &:after {
