@@ -1,3 +1,37 @@
+let firstName = document.getElementById('fname'),
+    surname = document.getElementById('lname'),
+    phone = document.getElementById('pnumber'),
+    btn = document.getElementById('startbtn');
+    
+
+    btn.addEventListener('click', function() {
+        if (firstName.value && surname.value && phone.value) {
+            firstName.nextElementSibling.classList.add('hidden');
+            surname.nextElementSibling.classList.add('hidden');
+            phone.nextElementSibling.classList.add('hidden');
+            
+        }
+
+        if (!firstName.value) {
+            firstName.nextElementSibling.classList.remove('hidden');
+        }
+        
+        if (!surname.value) {
+            surname.nextElementSibling.classList.remove('hidden');
+        }
+        if (!phone.value) {
+            phone.nextElementSibling.classList.remove('hidden');
+        }
+    });
+
+    
+
+
+
+
+
+
+
 //
 // About section tab navigation
 //
@@ -22,6 +56,20 @@ for (let tabElement of tabNavigationElements) {
         document.querySelector('.tab-content[data-tab="'+target+'"]').classList.add('active');
     });
 }
+
+
+// About section. Change of picture background
+
+document.querySelectorAll(".small-one").addEventListener('click', myFunction);
+    function myFunction() {
+    var element = document.querySelectorAll(".small-one");
+    element.classList.add("active");
+  };
+
+
+
+
+
 
 //
 // Reviews section swiper gallery
@@ -74,3 +122,27 @@ function getCurrentWeatherInCelsius() {
 }
 
 window.addEventListener('load', getCurrentWeatherInCelsius)
+
+
+// Bottom form
+
+let secondbtn = document.getElementById('sendbtn');
+    secondbtn.addEventListener('click', function() {
+        if (firstName.value && surname.value && phone.value) {
+            firstName.nextElementSibling.classList.add('hidden');
+            surname.nextElementSibling.classList.add('hidden');
+            phone.nextElementSibling.classList.add('hidden');
+            
+        }
+
+        if (!firstName.value) {
+            firstName.nextElementSibling.classList.remove('hidden');
+        }
+        
+        if (!surname.value) {
+            surname.nextElementSibling.classList.remove('hidden');
+        }
+        if (!phone.value) {
+            phone.nextElementSibling.classList.remove('hidden');
+        }
+    });

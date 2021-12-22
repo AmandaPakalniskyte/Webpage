@@ -72,6 +72,16 @@
             background-color: $myColorOne;
             border-radius: 5px;
             font-weight: bold;
+
+            .tiny {
+                color: $myColorFour;
+                font-size: 10px;
+
+                &.hidden {
+                    opacity:0;
+                }
+                
+            }
             
             
             

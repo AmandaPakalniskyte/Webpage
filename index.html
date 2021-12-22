@@ -55,9 +55,14 @@
                     <div class="form-top">Try your <span> FREE </span> trial today</div>
                     <form>
                         <span>Your details</span><br><br>
-                        <input type="text" id="fname" name="fname" placeholder="First name"><br><br>
-                        <input type="text" id="lname" name="lname" placeholder="Last name"><br><br>
-                        <input type="text" id="pnumber" name="pnumber" placeholder="Phone number"><br><br>
+                        <input type="text" id="fname" name="fname" placeholder="First name"><span class="tiny hidden">Required</span>
+                        <br><br>
+                        <input type="text" id="lname" name="lname" placeholder="Last name">
+                        <span class="tiny hidden">Required</span>
+                        <br><br>
+                        <input type="number" id="pnumber" name="pnumber" placeholder="Phone number">
+                        <span class="tiny hidden">Required</span>
+                        <br><br>
                         <span>Type of subscription</span><br><br>
                         <div class="form-row">
                             <div class="radio-input-wrap">
@@ -73,7 +78,7 @@
                         
                     </form>
                     <div class="form-bottom">
-                        <button type="button">GET STARTED</button>
+                        <button id="startbtn" type="button">GET STARTED</button>
                     </div>
                 </div>
             </div>
@@ -121,10 +126,10 @@
                 </div>
                 <div class="image-box">
                     <div class="small-images">
-                        <div><img src="../images/greens.jpg" alt="Green leaves"></div>
-                        <div><img src="../images/vegetables.jpg" alt="Vegetable image"></div>
+                        <div class="small-one"><img src="images/greens.jpg" alt="Green leaves"></div>
+                        <div class="small-two active"><img src="images/vegetables.jpg" alt="Vegetable image"></div>
                     </div>
-                    <div class="big-image"><img src="../images/steps.jpg" alt="Person climbing stairs"></div>
+                    <div class="big-image"><img src="images/steps.jpg" alt="Person climbing stairs"></div>
                 </div>
             </div>
 
@@ -138,10 +143,10 @@
                     </div>
                     <div class="image-box">
                         <div class="small-images">
-                            <div><img src="../images/apply.jpg" alt="Apply key"></div>
-                            <div><img src="../images/writing.jpg" alt="Person writing"></div>
+                            <div class="small-one"><img src="images/apply.jpg" alt="Apply key"></div>
+                            <div class="small-two"><img src="images/writing.jpg" alt="Person writing"></div>
                         </div>
-                        <div class="big-image"><img src="../images/computer.jpg" alt="Person on computer"></div>
+                        <div class="big-image"><img src="images/computer.jpg" alt="Person on computer"></div>
                     </div>
 
                 </div>
@@ -159,10 +164,10 @@
                     </div>
                     <div class="image-box">
                         <div class="small-images">
-                            <div><img src="../images/data.jpg" alt="Data flow"></div>
-                            <div><img src="../images/world.jpg" alt="Wold image"></div>
+                            <div class="small-one"><img src="images/data.jpg" alt="Data flow"></div>
+                            <div class="small-two"><img src="images/world.jpg" alt="Wold image"></div>
                         </div>
-                        <div class="big-image"><img src="../images/info.jpg" alt="Digital data"></div>
+                        <div class="big-image"><img src="images/info.jpg" alt="Digital data"></div>
                     </div>
                 </div>
             </div>
@@ -483,10 +488,17 @@
 
             <div class="form-box">
                 <form>
+                    <input type="text" id="fname" name="fname" placeholder="First name"><span class="tiny hidden">Required</span>
+                        <br><br>
+                        <input type="text" id="lname" name="lname" placeholder="Last name">
+                        <span class="tiny hidden">Required</span>
+                        <br><br>
+                        <input type="number" id="pnumber" name="pnumber" placeholder="Phone number">
+                        <span class="tiny hidden">Required</span>
                     
-                    <input type="text" id="fname" name="fname" placeholder="First name"><br><br>
+                    <!-- <input type="text" id="fname" name="fname" placeholder="First name"><br><br>
                     <input type="text" id="lname" name="lname" placeholder="Last name"><br><br>
-                    <input type="text" id="pnumber" name="pnumber" placeholder="Phone number"><br><br>
+                    <input type="text" id="pnumber" name="pnumber" placeholder="Phone number"><br><br> -->
                     
                     <div class="form-row">
                         <div class="radio-input-wrap">
@@ -502,7 +514,7 @@
                     
                 </form>
                 <div class="form-bottom">
-                    <button type="button">SEND</button>
+                    <button id="sendbtn" type="button">SEND</button>
                 </div>
             </div>
         </section>
