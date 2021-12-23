@@ -129,6 +129,13 @@ header {
                 padding: 0;
                 padding-top: 20px;
                 margin-left: -20px;
+                opacity: 0;
+
+                @media (max-width: 800px) {
+                    &.active {
+                        opacity: 1;
+                    }
+                }
 
               }
 
