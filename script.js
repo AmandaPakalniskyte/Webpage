@@ -1,3 +1,16 @@
+let menuTrigger = document.getElementById("mobile-menu-trigger");
+let mobileMenu = document.querySelector("header nav");
+
+menuTrigger.addEventListener('click', function() {
+  this.classList.toggle("active");
+  mobileMenu.classList.toggle("active");
+});
+
+
+
+
+
+
 let firstName = document.getElementById('fname'),
     surname = document.getElementById('lname'),
     phone = document.getElementById('pnumber'),
@@ -60,13 +73,47 @@ for (let tabElement of tabNavigationElements) {
 
 // About section. Change of picture background
 
-// document.querySelectorAll(".small-one").addEventListener('click', myFunction);
+// const imageBoxElements = document.querySelectorAll(".about .image-box .small-images .small-one");
+// const timageBoxContentElements = document.querySelectorAll(".about .tab-content");
+
+// function removeActiveClassesFromElements(elements) {
+//     for (let element of elements) {
+//         element.classList.remove("active");
+//     }
+// }
+
+// for (let tabElement of tabNavigationElements) {
+//     tabElement.addEventListener("click", function() {
+//         const target = this.dataset.target; // "register" / "apply" / "receive"
+
+//         removeActiveClassesFromElements(tabNavigationElements);
+//         this.classList.add("active");
+
+//         removeActiveClassesFromElements(tabContentElements);
+//         document.querySelector('.tab-content[data-tab="'+target+'"]').classList.add('active');
+//     });
+// }
+
+
+
+
+
+
+// document.querySelectorAll(".about .image-box .small-images .small-one").addEventListener('click', myFunction);
 //     function myFunction() {
+        
 //     var element = document.querySelectorAll(".small-one");
 //     element.classList.add("active");
 //   };
 
 
+
+
+//   document.getElementById("small-one").addEventListener("click", myFunction);
+
+//   function myFunction() {
+//     document.getElementById("small-one").innerHTML = "YOU CLICKED ME!";
+//   };
 
 
 
@@ -137,9 +184,9 @@ window.addEventListener('load', getCurrentWeatherInCelsius)
 
 // Bottom form
 
-let firstNameTwo = document.getElementById('fname'),
-    surnameTwo = document.getElementById('lname'),
-    phoneTwo = document.getElementById('pnumber'),
+let firstNameTwo = document.getElementById('fnameTwo'),
+    surnameTwo = document.getElementById('lnameTwo'),
+    phoneTwo = document.getElementById('pnumberTwo'),
     secondbtn = document.getElementById('sendbtn');
 
     secondbtn.addEventListener('click', function() {
